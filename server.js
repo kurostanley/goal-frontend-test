@@ -30,7 +30,8 @@ const httpsOptions = {
 	key: fs.readFileSync('key.pem'),
 	cert: fs.readFileSync('cert.pem')
 }
-const server = https.createServer(httpsOptions, app).listen(PORT);
+
+//xconst server = https.createServer(httpsOptions, app).listen(PORT);
 
 
-// app.listen(5000)
+app.listen(PORT)
